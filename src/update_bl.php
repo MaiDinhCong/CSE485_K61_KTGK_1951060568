@@ -76,7 +76,8 @@ if (isset($_POST['submit'])) {
     $reci_bqnty = $_POST['reci_bqnty'];
     $reci_sex = $_POST['reci_sex'];
     $reci_phno = $_POST['reci_phno'];
-    $sql = "UPDATE BLOOD_RECIPIENT SET `reci_name`='$reci_name',`reci_age`='$reci_age',`reci_bgrp`='$reci_bgrp',`reci_sex`='$reci_bqnty',`reci_sex`='$reci_sex' 
+    $sql = "UPDATE BLOOD_RECIPIENT SET `reci_name`='$reci_name',`reci_age`='$reci_age',
+    `reci_bgrp`='$reci_bgrp',`reci_bqnty`='$reci_bqnty',`reci_sex`='$reci_sex',`reci_phno`='$reci_phno'
     WHERE `reci_id` = $reci_id";
     $res = mysqli_query($conn, $sql);
     if ($res) {
